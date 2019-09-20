@@ -9,11 +9,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PhotoShop
-{
+{   
     public partial class Form1 : Form
     {
         public int fw = 3;
         public int fh = 3;
+        public string pic = null;
 
 
         int[,] edge = new int[3, 3] {
@@ -35,12 +36,12 @@ namespace PhotoShop
         public Form1()
         {
             InitializeComponent();
-            BG();
+           // BG();
         }
         
         public void BG()
         {
-            string img1 = @"C:\Users\ksolo\Documents\photos\pics\photo3.png";
+            string img1 = pic;// @"C:\Users\ksolo\Documents\photos\pics\photo3.png";
             Bitmap img = new Bitmap(img1);
             pictureBox1.Image = img;
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -51,7 +52,7 @@ namespace PhotoShop
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            string img1 = @"C:\Users\ksolo\Documents\photos\pics\photo3.png";
+            string img1 = pic;// @"C:\Users\ksolo\Documents\photos\pics\photo3.png";
             Bitmap img = new Bitmap(img1);
             for (int x = 0; x<img.Width; x++)
             {
@@ -69,7 +70,7 @@ namespace PhotoShop
 
         private void Button3_Click(object sender, EventArgs e)
         {
-            string img1 = @"C:\Users\ksolo\Documents\photos\pics\photo3.png";
+            string img1 = pic;//@"C:\Users\ksolo\Documents\photos\pics\photo3.png";
             Bitmap img = new Bitmap(img1);
             pictureBox1.Image = img;
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -79,7 +80,7 @@ namespace PhotoShop
         {
             double bias = 0.0;
             double factor = 1.0;
-            string img1 = @"C:\Users\ksolo\Documents\photos\pics\photo3.png";
+            string img1 = pic;// @"C:\Users\ksolo\Documents\photos\pics\photo3.png";
             Bitmap img = new Bitmap(img1);
             int w = img.Width;
             int h = img.Height;
@@ -119,7 +120,7 @@ namespace PhotoShop
         {
             double bias = 0.0;
             double factor = 1.0 / 16.0;
-            string img1 = @"C:\Users\ksolo\Documents\photos\pics\photo3.png";
+            string img1 = pic;// @"C:\Users\ksolo\Documents\photos\pics\photo3.png";
             Bitmap img = new Bitmap(img1);
             int w = img.Width;
             int h = img.Height;
@@ -152,6 +153,13 @@ namespace PhotoShop
             }
             pictureBox1.Image = img;
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+        }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.ShowDialog();
+            pic = openFileDialog1.FileName;
+            BG();
         }
     }
 }
