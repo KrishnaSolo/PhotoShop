@@ -1,0 +1,11 @@
+C:\Users\ksolo\source\repos\PhotoShop\PhotoShop\bin\Release\PhotoShop.exe.config
+C:\Users\ksolo\source\repos\PhotoShop\PhotoShop\bin\Release\PhotoShop.exe
+C:\Users\ksolo\source\repos\PhotoShop\PhotoShop\bin\Release\PhotoShop.pdb
+C:\Users\ksolo\source\repos\PhotoShop\PhotoShop\obj\Release\PhotoShop.csprojAssemblyReference.cache
+C:\Users\ksolo\source\repos\PhotoShop\PhotoShop\obj\Release\PhotoShop.Form1.resources
+C:\Users\ksolo\source\repos\PhotoShop\PhotoShop\obj\Release\PhotoShop.Form2.resources
+C:\Users\ksolo\source\repos\PhotoShop\PhotoShop\obj\Release\PhotoShop.Properties.Resources.resources
+C:\Users\ksolo\source\repos\PhotoShop\PhotoShop\obj\Release\PhotoShop.csproj.GenerateResource.cache
+C:\Users\ksolo\source\repos\PhotoShop\PhotoShop\obj\Release\PhotoShop.csproj.CoreCompileInputs.cache
+C:\Users\ksolo\source\repos\PhotoShop\PhotoShop\obj\Release\PhotoShop.exe
+C:\Users\ksolo\source\repos\PhotoShop\PhotoShop\obj\Release\PhotoShop.pdb

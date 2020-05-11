@@ -301,8 +301,8 @@ namespace PhotoShop
                     }
                 }
 
-                ColorDialog dlg = new ColorDialog();
-                int[] arr = new int[K];
+                //ColorDialog dlg = new ColorDialog();
+                Color[] arr = new Color[K];
                 int inc = 0;
 
                 foreach (var col in clustersCenters)
@@ -312,14 +312,16 @@ namespace PhotoShop
                     int bFinal = Convert.ToInt32(col.Item2 * 255);
                     int gFinal = Convert.ToInt32(col.Item3 * 255);
 
-                    arr[inc] = ColorTranslator.ToWin32(Color.FromArgb(rFinal,gFinal,bFinal));
+                    arr[inc] = Color.FromArgb(rFinal, gFinal, bFinal);
 
                     Console.WriteLine("Center:{0} - R={1} B={2} G={3} ole:{4}", inc, rFinal, bFinal, gFinal, arr[inc]);
                     inc++;
                 }
                 //dlg.Container.Remove(Component)
-                dlg.CustomColors = arr;
-                dlg.ShowDialog();
+                //dlg.CustomColors = arr;
+                //dlg.ShowDialog();
+                Form2 palgen = new Form2(arr);
+                palgen.ShowDialog();
             }
         }
     }
