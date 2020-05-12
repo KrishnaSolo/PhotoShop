@@ -1,7 +1,7 @@
 # PhotoShop
 
 ## Summary:
-A photoshop program implementing FFT, Convolution and other image processing techniques
+A photoshop program implementing FFT, Convolution and other image processing techniques.
 Perfoms image decomposition into user definied number of most common colours within the picture.
 
 ## Requirments:
